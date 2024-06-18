@@ -2,8 +2,8 @@
 tasks:
   - init: npm install # runs during prebuild
     command: npm start
-- name: Initialize AWS CLI
-  command: bash $GITPOD_REPO_ROOT/AWSCLI.sh
+  - name: Initialize AWS CLI
+    command: bash $GITPOD_REPO_ROOT/AWSCLI.sh
 
 # List the ports to expose. Learn more https://www.gitpod.io/docs/config-ports/
 ports:

@@ -16,7 +16,3 @@ cd "${OLD_DIR}" || exit 1
 rm -rf "${TMP_DIR}"
 
 echo "AWS CLI is installed in your workspace"
-
-
-- name: Initialize AWS CLI
-	command: bash $GITPOD_REPO_ROOT/configure_aws_with_gitpod.sh

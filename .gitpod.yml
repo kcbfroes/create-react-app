@@ -6,6 +6,8 @@ tasks:
     command: bash $GITPOD_REPO_ROOT/AWSCLI.sh
   - name: Initialize AWS CLI
     command: gp idp login aws --role-arn <981241700645> [--duration-seconds=<3600>] aws secretsmanager get-secret-value --secret-id database_connection_string --region us-east-1 | jq .SecretString
+  - name: Initialize AMPLIFY CLI
+    command: bash $GITPOD_REPO_ROOT/AMPLIFYCLI.sh
 
 # List the ports to expose. Learn more https://www.gitpod.io/docs/config-ports/
 ports:

@@ -7,10 +7,9 @@ TMP_DIR="$(mktemp -d)"
 echo "Updating AMPLIFY CLI"
 cd "${TMP_DIR}" || exit 1
 
-curl -fSsl "https://aws-amplify.github.io/amplify-cli/install" -o "amplifycli.zip"
-unzip -qq amplifycli.zip
-sudo install --update
-rm amplifycli.zip
+curl -fSsl "https://aws-amplify.github.io/amplify-cli/install" -o "InstallAmplify.sh"
+sudo bash InstallAmplify.sh
+rm InstallAmplify.sh
 
 cd "${OLD_DIR}" || exit 1
 rm -rf "${TMP_DIR}"

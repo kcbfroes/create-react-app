@@ -7,6 +7,7 @@ tasks:
   - init: |
       npm install
       npm install aws-amplify
+      npm install react@latest react-dom@latest
      # runs after prebuild
     command: npm start
 
